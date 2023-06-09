@@ -8,4 +8,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  runtimeConfig: {
+    GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
+    public: {
+      GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
+    },
+  },
 });
