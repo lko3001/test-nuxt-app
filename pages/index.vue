@@ -28,6 +28,7 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from "@vue/reactivity";
 const { status, data, signIn, signOut } = useAuth();
 
 async function handleSignIn() {
